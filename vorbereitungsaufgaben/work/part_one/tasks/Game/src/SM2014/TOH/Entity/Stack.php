@@ -56,7 +56,7 @@ class Stack implements StackInterface
      * @param \SM2014\TOH\Entity\BrickInterface $brick
      */
     public function addBrick(BrickInterface $brick){
-
+        array_push($this->bricks, $brick);
     }
 
     /**

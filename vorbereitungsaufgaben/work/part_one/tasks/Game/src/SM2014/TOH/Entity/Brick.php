@@ -25,6 +25,8 @@ class Brick implements BrickInterface
     /** @var array */
     private $position;
 
+    private $level;
+
     /**
      * @param integer $size
      * @param array   $position
@@ -79,7 +81,7 @@ class Brick implements BrickInterface
      * @return int
      */
     public function getLevel(){
-
+        return $this->level;
     }
 
     /**
@@ -88,7 +90,7 @@ class Brick implements BrickInterface
      * @param int $level
      */
     public function setLevel($level){
-
+        $this->level = $level;
     }
 
     /**
@@ -97,6 +99,7 @@ class Brick implements BrickInterface
      * @return int
      */
     public function getSize(){
+        return $this->size;
 
     }
 }
