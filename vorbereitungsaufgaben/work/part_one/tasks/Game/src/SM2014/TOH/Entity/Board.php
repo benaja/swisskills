@@ -14,7 +14,7 @@ use SM2014\TOH\Util\Assertion;
  *
  * @package SM2014TOHEntity
  */
-class Board
+class Board implements BoardInterface
 {
     /** @var \SM2014\TOH\Entity\BrickInterface[] */
     private $bricks;
@@ -42,5 +42,19 @@ class Board
     public function getStacks()
     {
         return $this->stacks;
+    }
+
+    public function moveToRight(BrickInterface $brick, $levelsToMove){
+
+    }
+
+    /**
+     * Moves the defined brick the set amount of levels to the left
+     *
+     * @param \SM2014\TOH\Entity\BrickInterface $brick
+     * @param int                               $levelsToMove
+     */
+    public function moveToLeft(BrickInterface $brick, $levelsToMove){
+        
     }
 }

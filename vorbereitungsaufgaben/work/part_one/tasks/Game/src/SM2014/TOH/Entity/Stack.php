@@ -15,7 +15,7 @@ use SM2014\TOH\Util\Assertion;
  *
  * @package SM2014TOHEntity
  */
-class Stack
+class Stack implements StackInterface
 {
     /** @var int */
     protected $position;
@@ -30,5 +30,57 @@ class Stack
     {
         Assertion::integer($position);
         $this->position = $position;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPosition(){
+
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasBricks(){
+        if(empty($this->bricks)){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    /**
+     * Adds a brick to a stack
+     *
+     * @param \SM2014\TOH\Entity\BrickInterface $brick
+     */
+    public function addBrick(BrickInterface $brick){
+
+    }
+
+    /**
+     * Removes a brick from the top of the stack
+     */
+    public function shiftBrick(){
+
+    }
+
+    /**
+     * Determines the top level of the stack
+     *
+     * @return int
+     */
+    public function getTopLevel(){
+
+    }
+
+    /**
+     * Provides the set of currently registered bricks.
+     *
+     * @return \SM2014\TOH\Entity\BrickInterface[]
+     */
+    public function getBricks(){
+        return $this->bricks;
     }
 }

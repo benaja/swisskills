@@ -13,7 +13,7 @@ $data = [
 
 $stringArray = array();
 foreach ($data as $hostdata) {
-    $stringArray[] = "Received data from $hostdata["system"] with value $hostdata["value"] at $hostdata["time"].";
+    $stringArray[] = "Received data from {$hostdata['system']} with value {$hostdata['value']} at {$hostdata['time']}.";
 }
 
 if ($stringArray[0] === "Received data from host1 with value 15612 at 12:21." &&

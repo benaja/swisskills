@@ -40,6 +40,7 @@ $personsIterator = $personsObj->getIterator();
 // import each record in $personsObj
 while ($personsIterator->valid()) {
     $couter += import ($personsIterator->current()['name'], $personsIterator->current()['age']);
+    $personsIterator->next();
 }
 
 if (4 === $couter && import('test', 123) == 1) {

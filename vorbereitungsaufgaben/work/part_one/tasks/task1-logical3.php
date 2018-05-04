@@ -46,7 +46,8 @@ class MessageManager {
      * @return array
      */
     public function getLastMessage() {
-        return array_pop($this->messages);
+        return $this->messages[count($this->messages)-1];
+        // return array_pop($this->messages);
     }
 
     /**
@@ -76,11 +77,14 @@ $manager->addMessage('A message of person C');
 $manager->addMessage('An other message of person B');
 $manager->addMessage('An other message of person C');
 
-// get last message for a message dashboard
-$lastMessage = $manager->getLastMessage();
+
 
 // get all messages for some other awesome functionality
 $allMessages = $manager->getAllMessages();
+
+// get last message for a message dashboard
+$lastMessage = $manager->getLastMessage();
+
 
 if (5 === $manager->countMessages() && $lastMessage === 'An other message of person C') {
     $params['solvedErrors']['the message error'] = true;

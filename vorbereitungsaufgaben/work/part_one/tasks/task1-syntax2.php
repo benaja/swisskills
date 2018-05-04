@@ -8,7 +8,7 @@
  *       local time in Switzerland
  */
 
-$timeZrh = new DateTime('now', new DateTimeZone('Europe\Zurich'));
+$timeZrh = new DateTime('now', new DateTimeZone('Europe/Zurich'));
 $displayDate = $timeZrh->format('Y-m-d H:i:s');
 
 $params['solvedErrors']['the second syntax error'] = true;

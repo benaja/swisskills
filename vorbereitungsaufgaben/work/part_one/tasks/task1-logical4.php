@@ -25,6 +25,10 @@ class Task1 implements Serializable
         return serialize($this->data);
     }
 
+    public function unserialize($serialized){
+
+    }
+
 }
 
 $task1 = new Task1;

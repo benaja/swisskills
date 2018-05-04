@@ -17,7 +17,7 @@ use SM2014\TOH\Util\Assertion;
  *
  * @package SM2014TOHEntity
  */
-class Brick
+class Brick implements BrickInterface
 {
     /** @var int */
     private $size;
@@ -35,5 +35,68 @@ class Brick
 
         $this->size = (int)$size;
         $this->position = $position;
+    }
+
+    /**
+     * (Re)sets the position of a brick
+     *
+     * @param array $position
+     */
+    public function setPosition(array $position){
+
+    }
+
+    /**
+     * Provides the current position of a brick
+     *
+     * @return array
+     */
+    public function getPosition(){
+        return $this->position;
+    }
+
+    /**
+     * Provides the current level a brick is located at.
+     *
+     * @return int
+     */
+    public function getStack(){
+
+    }
+
+    /**
+     * (Re)sets the stack a brick is located in.
+     *
+     * @param int $stack
+     */
+    public function setStack($stack){
+
+    }
+
+    /**
+     * Provides the level of a brick
+     *
+     * @return int
+     */
+    public function getLevel(){
+
+    }
+
+    /**
+     * (Re)sets the stack a brick is located in.
+     *
+     * @param int $level
+     */
+    public function setLevel($level){
+
+    }
+
+    /**
+     * Provides the size of this brick.
+     *
+     * @return int
+     */
+    public function getSize(){
+
     }
 }
