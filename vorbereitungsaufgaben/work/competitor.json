@@ -1,0 +1,11 @@
+{
+    "competitor": {
+        "prename"      : "Benaja",
+        "surname"      : "Hunzinger",
+        "email"        : "benaja.hunzinger@swisscom.com",
+        "birthdate"    : "2000-09-30",
+        "company"      : "Swisscom AG",
+        "school"       : "GIBB",
+        "codingEditor" : "Visual Studio Code"
+    }
+}

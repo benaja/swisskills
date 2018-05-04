@@ -1,0 +1,81 @@
+.main-content {
+    margin-top: 60px;
+}
+.alert {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.required {
+    color: #e74c3c;
+}
+#toh ul {
+    list-style: none;
+    text-align: center;
+}
+#toh ul, #toh li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+#toh .board {
+    margin: 0 0 80px 0;
+}
+#toh .stack {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    border-bottom: 4px solid #1f2c39;
+    margin-right: 1%;
+    padding: 10px 0 0 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#toh .brick {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#toh.brick-moving .stack:not(.brick-base):hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+#toh .brick span {
+    display: inline-block;
+    height: 22px;
+    width: 100%;
+    background: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 5px 0 0 0;
+}
+#toh .brick.selectable span {
+    cursor: pointer;
+}
+#toh .brick.brick1 span {
+    width: 20%;
+    background-color: #18bc9c;
+}
+#toh .brick.brick1 span:hover { background-color: #128f76; }
+#toh .brick span.active { opacity: 0.5; margin: 0 0 5px 0; }
+
+#toh .brick.brick2 span {
+    width: 40%;
+    background-color: #3498db;
+}
+#toh .brick.brick2 span:hover { background-color: #217dbb; }
+
+#toh .brick.brick3 span {
+    width: 60%;
+    background-color: #f39c12;
+}
+#toh .brick.brick3 span:hover { background-color: #c87f0a; }
+
+#toh .brick.brick4 span {
+    width: 80%;
+    background-color: #e74c3c;
+}
+#toh .brick.brick4 span:hover { background-color: #d62c1a; }
+

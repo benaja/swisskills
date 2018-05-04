@@ -1,0 +1,13 @@
+{
+    "require": {
+        "silex/silex": "~1.0",
+        "twig/twig": "1.*",
+        "symfony/twig-bridge": "2.*",
+        "entea/silex-twig-simple-asset-extension": "dev-master",
+        "beberlei/assert": "dev-master"
+    },
+    "require-dev": {
+        "lapistano/proxy-object": "dev-master",
+        "phpunit/phpunit": "@stable"
+    }
+}

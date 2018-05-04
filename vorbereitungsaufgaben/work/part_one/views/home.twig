@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+{% block title %}part one{% endblock title %}
+
+{% block breadcrumb %}
+<ol class="breadcrumb">
+    <li class="active">home</li>
+</ol>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h1 id="container">part one</h1>
+        </div>
+        <div class="bs-example">
+            <div class="jumbotron">
+                <h1>Welcome</h1>
+                <p>
+                    This is the place where you will implement the functionality of the part one.
+                </p>
+                <p>
+                    <a href="../../readme/part_one.html#task1" class="btn btn-primary btn-lg">task 1</a>
+                    <a href="../../readme/part_one.html#task2" class="btn btn-primary btn-lg">task 2</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <blockquote>
+            <p>The part one tests your programming skills.</p>
+        </blockquote>
+    </div>
+</div>
+{% endblock content %}

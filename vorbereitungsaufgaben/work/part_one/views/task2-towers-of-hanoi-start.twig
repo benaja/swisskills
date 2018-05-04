@@ -1,0 +1,63 @@
+{% extends "base.twig" %}
+
+{% block title %}towers of hanoi - task 2 - part one{% endblock title %}
+
+{% block breadcrumb %}
+<ol class="breadcrumb">
+    <li><a href="{{ path('home') }}">home</a></li>
+    <li class="current">towers of hanoi</li>
+</ol>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h1 id="forms">
+                towers of hanoi
+                <small>task 3</small>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="well">
+            <form name="toh" class="bs-example form-horizontal" action="{{ path('task2-towers-of-hanoi') }}" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name" class="col-lg-3 control-label">Name</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Player name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-lg-3 control-label">Difficulty <span class="required">*</span></label>
+                        <div class="col-lg-9">
+                            <select class="form-control" name="difficulty" id="difficulty" placeholder="Difficulty">
+                                {% for difficulty in game.difficulties %}
+                                    <option value="{{ difficulty.size }}">{{ difficulty.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-9 col-lg-offset-3">
+                            <button type="submit" class="btn btn-primary">start game</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-6">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <blockquote>
+            <p>The part one tests your programming skills.</p>
+        </blockquote>
+    </div>
+</div>
+{% endblock content %}

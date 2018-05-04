@@ -1,0 +1,56 @@
+{% extends "base.twig" %}
+
+{% block title %}towers of hanoi - task 2 - part one{% endblock title %}
+
+{% block breadcrumb %}
+<ol class="breadcrumb">
+    <li><a href="{{ path('home') }}">home</a></li>
+    <li><a href="{{ path('task2') }}">towers of hanoi</a></li>
+    <li class="current">game</li>
+</ol>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h1 id="forms">towers of hanoi <small>task 3</small></h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="toh" class="col-lg-12">
+        <div id="message" class="well pull-right">
+            Select a brick by clicking on it.
+        </div>
+        <br clear="both">
+        <ul class="board">
+            {% for stack in game.stacks %}
+                <li class="stack">
+                    <ul class="bricks">
+                        {% for brick in stack %}
+                            <li class="brick brick{{brick.size}}{% if brick.selectable %} selectable{% endif %}"><span></span></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+            <br clear="both">
+        </ul>
+        <form id="move" action="{{ path('task2-towers-of-hanoi') }}" method="GET">
+            <input type="hidden" name="fromStackId" value="">
+            <input type="hidden" name="fromBrickId" value="">
+            <input type="hidden" name="direction" value="">
+            <input type="hidden" name="steps" value="">
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <blockquote>
+            <p>The part one tests your programming skills.</p>
+        </blockquote>
+    </div>
+</div>
+{% endblock content %}
