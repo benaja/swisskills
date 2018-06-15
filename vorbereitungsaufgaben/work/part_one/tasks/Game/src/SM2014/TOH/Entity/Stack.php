@@ -36,7 +36,7 @@ class Stack implements StackInterface
      * @return int
      */
     public function getPosition(){
-
+        return $this->position;
     }
 
     /**
@@ -63,7 +63,8 @@ class Stack implements StackInterface
      * Removes a brick from the top of the stack
      */
     public function shiftBrick(){
-
+        $topLevelBrick = $this->getTopLevel();
+        array_pop($this->bricks);
     }
 
     /**
@@ -72,7 +73,10 @@ class Stack implements StackInterface
      * @return int
      */
     public function getTopLevel(){
-
+        if(empty($this->bricks)){
+            return null;
+        }
+        return $this->bricks[count($this->bricks)-1];
     }
 
     /**

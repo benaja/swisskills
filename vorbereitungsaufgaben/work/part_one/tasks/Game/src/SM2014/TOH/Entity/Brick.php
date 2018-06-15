@@ -45,7 +45,7 @@ class Brick implements BrickInterface
      * @param array $position
      */
     public function setPosition(array $position){
-
+        $this->position = $position;
     }
 
     /**
@@ -63,7 +63,7 @@ class Brick implements BrickInterface
      * @return int
      */
     public function getStack(){
-
+        return $this->position[0];
     }
 
     /**
@@ -72,7 +72,7 @@ class Brick implements BrickInterface
      * @param int $stack
      */
     public function setStack($stack){
-
+        $this->position[0] = $stack->getPosition();
     }
 
     /**

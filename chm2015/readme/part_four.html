@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Part four - Swiss Competition 15</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Swiss Competition 15">
+        <meta name="author" content="Patrick Zahnd">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="container-narrow">
+
+            <div class="row masthead">
+                <div class="col-lg-4 pull-right">
+                    <img class="pull-right" src="images/logo.png" width="140">
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="muted">Swiss Competition 15 <small>Trade 17 - Web Design</small></h3>
+
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-info-sign"></span> Instructions</a></li>
+                        <li><a href="part_one.html">Part one</a></li>
+                        <li><a href="part_two.html">Part two</a></li>
+                        <li><a href="part_three.html">Part three</a></li>
+                        <li class="active"><a href="part_four.html">Part four</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row sm-content">
+                <div class="col-lg-8">
+                    <h1>Part four - Design skills</h1>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pull-right">
+                        <span class="label label-default">Total points: 67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sm-content">
+                <div class="col-lg-12">
+                    <h3 id="taskGeneralInformation">General information</h3>
+                    <p>
+                        In part four you will prove your design skills. Therefore you will
+                        create a design for a mobile application. Your working space is the folder <code>work/part_four/</code>.
+                    </p>
+                    <div class="alert alert-danger">
+                        You can only change or create new files under <b>work/part_four/</b>. All other files
+                        will be reverted for the review process.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sm-content">
+                <div class="col-lg-8">
+                    <h3>Task 1 - Mobile Calendar View</h3>
+
+                    <p>
+                        Create a mobile design for a calendar day view using your favorite tool (e.g. Adobe Photoshop). The design
+                        has to meet professional visual expectations.
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Screen dimensions</h4>
+                            <p>
+                                You have to design for the Samsung Galaxy S5 screen only:
+                                <ul>
+                                    <li>1920x1080px</li>
+                                    <li>Portrait format only!</li>
+                                </ul>
+                            </p>
+                            <p>Use the Photoshop template file (<a href="../material/part_four/template.psd">template.psd</a>) provided.</p>
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Color scheme</h4>
+                            <p>
+                                For your design you have to choose four to six colors.
+                                Define your color scheme and place the colors used in the following color scheme file:
+                            </p>
+                            <p><a href="../work/part_four/color-scheme.html">color-scheme.html</a></p>
+                            <p><i>You have to modify the CSS in the color-scheme.html file according to the comments.</i></p>
+                        </li>
+                    </ul>
+                    <h4>
+                        The following data has to be displayed:
+                    </h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>
+                                <b>General information:</b>
+                                <ul>
+                                    <li>Day number: 23</li>
+                                    <li>Day name: Wednesday</li>
+                                    <li>Month and year: September 2015</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>
+                                <b>Action buttons:</b> Create the following icon buttons:
+                                <ul>
+                                    <li>A button to create a new calendar entry</li>
+                                    <li>A button to show the whole month</li>
+                                    <li>Buttons to change day (back and forth)</li>
+                                </ul>
+                            </p>
+                            <p>
+                                You are expected to design necessary icons by yourself and
+                                are not allowed to use existing icons (e.g. fontawesome).
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>
+                                <b>Calendar entries:</b>
+
+                                3 to 5 calendar entries have to be visible within the phones viewport (without scrolling).
+                                Each calendar entry has to contain a title, a time, a location and the attendees pictures.
+                                You can choose the items from the following list:
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Time</th>
+                                            <th>Location</th>
+                                            <th>Attendees</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Video Conference</td>
+                                            <td>8:15 AM</td>
+                                            <td>Zurich</td>
+                                            <td>Julia, Pascal, Dana, Jasmin</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daily Standup</td>
+                                            <td>10:30 AM</td>
+                                            <td>Zurich</td>
+                                            <td>Manuel, Julian</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mark&#039;s&nbsp;Birthday&nbsp;Meal</td>
+                                            <td>11:30&nbsp;AM</td>
+                                            <td>Lilys&nbsp;Restaurant</td>
+                                            <td>Mark, Michael, Laura, Noora, Hans,&nbsp;+5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gala Night</td>
+                                            <td>4:00&nbsp;PM</td>
+                                            <td>Olten</td>
+                                            <td>Emma, Kristiana</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gala Apero</td>
+                                            <td>8:00&nbsp;PM</td>
+                                            <td>Olten</td>
+                                            <td>Emma, Kristiana</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Train Home</td>
+                                            <td>11:00&nbsp;PM</td>
+                                            <td>Olten</td>
+                                            <td>Julia</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <p>
+                                Use pictures for attendees not their names.
+                                You can choose avatars from these pictures:
+                                <a href="../material/part_four/faces.jpg">faces1</a>,
+                                <a href="../material/part_four/faces2.png">faces2</a>,
+                                <a href="../material/part_four/faces3.jpg">faces3</a>
+                            </p>
+                            <p>
+                                Create and use icons for the time and location.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-warning">
+                        The customer asked to get the <b>RAW design file</b> and also a <b>PNG version</b> which he can print
+                        and show his stakeholders.
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Expected result</h4>
+                            <p class="list-group-item-text">
+                                The design files (RAW and PNG), placed under <code>work/part_four/design/</code>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 marking">
+                    <h3>Marking scheme</h3>
+
+                    <h4>Objective <span class="badge">29</span></h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">2</span>
+                            The color scheme is defined in <a href="../work/part_four/color-scheme.html">color-scheme.html</a> (1) and 4-6 colors are chosen (1).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span>
+                            The design files (RAW and PNG) are placed under /work/part_four/design/.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span>
+                            The <a href="../material/part_four/template.psd">Photoshop template</a> is used.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span>
+                            All general information is visible: Day number (1), day name (1),
+                            month (0.5) and year (0.5).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">8</span>
+                            A button to create (1), to view month (1) and to
+                            go back and forth (2) are displayed.
+                            Icons are designed for all buttons (1 for each icon).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span>
+                            3-5 calendar entries are visible within the phones viewport (without scrolling). Minus one point for each less or more displayed.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">6</span>
+                            Each calendar entry contains a title (1), time (1),
+                            location (1) and the attendees pictures (3).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span>
+                            An icon is used for the time (1) and for the location (1).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">-6</span>
+                            No existing icons are copied (e.g. fontawesome), otherwise -6 points.
+                        </li>
+                    </ul>
+
+                    <h4>Subjective <span class="badge">38</span></h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">6</span>
+                            <b>Impression:</b>
+                            Colors used and theme are appropriate for the target audience.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">6</span>
+                            <b>Composition:</b>
+                            Design elements fit together and are relevant.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">6</span>
+                            <b>Creativity:</b>
+                            Design is creative (2), suprising (2) and innovative (2).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">6</span>
+                            <b>Graphic work:</b>
+                            Pictures are prepared neatly and integrated professionally.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">5</span>
+                            <b>Usability:</b>
+                            The design is user friendly, efficient and engaging (2).
+                            It is clear on which page I am (1).
+                            All interaction elements can be easily identified and their purpose is obvious (2).
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">9</span>
+                            <b>Readability:</b>
+                            The text is well readable: contrast (1), font-size (1) and line-height (1).
+                            Inner and outer distances to their adjacent elements shows at what element the text belongs (3).
+                            Text is readable by color-blind readers (e.g. distinction between red and green) (3).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row sm-content hide" id="task-zero">
+                <div class="col-lg-12">
+                    <h3 id="task0">Task 0 - Competitor information</h3>
+                    <p>
+                        Before you start with the work, you have to fill the competitor.js file.
+                    </p>
+
+                    <div class="alert alert-danger">
+                        You will only be rated when you complete this task!
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Expected result</h4>
+                            <p class="list-group-item-text">
+                                <a href="../work/competitor.js">competitor.js</a> completed with your personal information.
+                            </p>
+
+                            <div class="small-inner">
+                                <h5>Information found:</h5>
+                                <table id="competitor-js" class="table table-condensed">
+                                    <tbody>
+                                        <tr class="danger" data-value="prename">
+                                            <td>prename</td>
+                                            <td>Please set your prename</td>
+                                        </tr>
+                                        <tr class="danger" data-value="surname">
+                                            <td>surname</td>
+                                            <td>Please set your surname</td>
+                                        </tr>
+                                        <tr class="danger" data-value="email">
+                                            <td>email</td>
+                                            <td>Please set your email</td>
+                                        </tr>
+                                        <tr class="danger" data-value="birthdate">
+                                            <td>birthdate</td>
+                                            <td>Please set your birthdate</td>
+                                        </tr>
+                                        <tr class="danger" data-value="school-company">
+                                            <td>school and/or company</td>
+                                            <td>Please set your school and/or company</td>
+                                        </tr>
+                                        <tr class="danger" data-value="browser">
+                                            <td>browser</td>
+                                            <td>Please set your browser</td>
+                                        </tr>
+                                        <tr class="danger" data-value="source-code-editors">
+                                            <td>source-code-editors</td>
+                                            <td>Please set your source code editor(s)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Swiss Competition 15 - Trade 17 - Web Design &copy; swiss skills 2015</p>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="../work/competitor.js"></script>
+        <script src="js/swisscompetition.js"></script>
+    </body>
+</html>

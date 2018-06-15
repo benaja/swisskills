@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background: white;
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+/**
+ * Colors:
+ * 
+ * #203731
+ * #ffb612
+ * #000000
+ * #ffffff
+ * #b2b2b2
+ */
+
+h1, h2, h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+main {
+    max-width: 62.5em; /* 1000/16 */
+    margin: 0 auto;
+}
+
+/**
+ * Menu
+ */
+.plaintext--columns-3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+}
+.plaintext--columns-3 p {
+    vertical-align: top;
+    margin-top: 0;
+}
+
+
+/**
+ * Contact form
+ */
+form {
+    max-width: 31.25em; /* 500/16 */
+    margin: 0 auto;
+}
+label {
+    text-align: center;
+    display: block;
+    background: #ffb612;
+    padding: .5em;
+    text-transform: uppercase;
+    color: white;
+}
+input, textarea {
+    background: none;
+    border: 2px solid #b2b2b2;
+    color: white;
+    padding: .5em;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: .5em;
+    font-family: inherit;
+    background-color: #b2b2b2;
+}
+
+/**
+ * Image gallery
+ */
+.gallery {
+  text-align: justify;
+  font-size: 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.gallery > * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  column-break-inside: avoid;
+  break-inside: avoid;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+

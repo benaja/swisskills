@@ -45,6 +45,28 @@ class Board implements BoardInterface
     }
 
     public function moveToRight(BrickInterface $brick, $levelsToMove){
+        $stackPosition = $brick->getStack();
+        $oldStack = $this->stacks[$stackPosition];
+        $newStack = $this->stacks[$stackPosition+$levelsToMove];
+
+        if(!$newStack->hasBricks()){
+            $brick->setPosition([$newStack->getPosition(), 0]);
+            $brick->setLevel(0);
+            $newStack->addBrick($brick);
+            $oldStack->shiftBrick();
+        }else{
+            $topLevelBrick = $newStack->getTopLevel();
+            if($topLevelBrick->getSize() > $brick->getSize()){
+                $newPosition = [
+                    $newStack->getPosition(),
+                    $topLevelBrick->getPosition()[1]+1
+                ];
+                $brick->setPosition($newPosition);
+                $brick->setLevel($topLevelBrick->getLevel()+1);
+                $newStack->addBrick($brick);
+                $oldStack->shiftBrick();
+            }
+        }
 
     }
 
@@ -55,6 +77,27 @@ class Board implements BoardInterface
      * @param int                               $levelsToMove
      */
     public function moveToLeft(BrickInterface $brick, $levelsToMove){
-        
+        $stackPosition = $brick->getStack();
+        $oldStack = $this->stacks[$stackPosition];
+        $newStack = $this->stacks[$stackPosition-$levelsToMove];
+
+        if(!$newStack->hasBricks()){
+            $brick->setPosition([$newStack->getPosition(), 0]);
+            $brick->setLevel(0);
+            $newStack->addBrick($brick);
+            $oldStack->shiftBrick();
+        }else{
+            $topLevelBrick = $newStack->getTopLevel();
+            if($topLevelBrick->getSize() > $brick->getSize()){
+                $newPosition = [
+                    $newStack->getPosition(),
+                    $topLevelBrick->getPosition()[1]+1
+                ];
+                $brick->setPosition($newPosition);
+                $brick->setLevel($topLevelBrick->getLevel()+1);
+                $newStack->addBrick($brick);
+                $oldStack->shiftBrick();
+            }
+        }
     }
 }
